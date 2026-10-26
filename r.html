@@ -14,7 +14,6 @@
 
 <body class="is-preload">
 
-    <!-- Wrapper -->
     <div id="wrapper">
 
         <!-- Header -->
@@ -23,13 +22,12 @@
                 <strong>Jason Alfonso</strong>
                 <span>Analytics Portfolio</span>
             </a>
-
             <nav>
                 <a href="#menu">Menu</a>
             </nav>
         </header>
 
-        <!-- Navigation Menu -->
+        <!-- Navigation -->
         <nav id="menu">
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
@@ -43,10 +41,10 @@
             </ul>
         </nav>
 
-        <!-- Main Content -->
+        <!-- Main -->
         <div id="main">
 
-            <!-- Page Banner -->
+            <!-- Page Introduction -->
             <section id="one">
                 <div class="inner">
                     <header class="major">
@@ -62,9 +60,8 @@
                     </p>
 
                     <p>
-                        These projects demonstrate the application of statistical
-                        methods to real-world questions in food microbiology,
-                        public health, and climate-related research.
+                        These projects apply statistical methods to questions in
+                        food microbiology, public health, and climate-related research.
                     </p>
                 </div>
             </section>
@@ -79,21 +76,20 @@
 
                     <p>
                         <strong>Tools:</strong> R, dplyr, ggplot2, descriptive
-                        statistics, non-parametric hypothesis testing.
+                        statistics, and non-parametric hypothesis testing.
                     </p>
 
                     <p>
                         This analysis examines bacterial counts, measured as
                         colony-forming units per gram (CFU/g), in chilled and
-                        non-chilled food samples. The objective was to describe
-                        the observed distributions and investigate whether
-                        bacterial counts differed between treatment groups
-                        and across observed temperature categories.
+                        non-chilled food samples. The objective is to describe
+                        the observed distributions and investigate differences
+                        between treatment groups and temperature categories.
                     </p>
 
                     <h3>Research Questions</h3>
                     <ul>
-                        <li>How do observed bacterial counts differ between chilled and non-chilled samples?</li>
+                        <li>How do bacterial counts differ between chilled and non-chilled samples?</li>
                         <li>Are the bacterial count distributions consistent with normality?</li>
                         <li>Do observed counts differ across temperature categories?</li>
                     </ul>
@@ -157,9 +153,8 @@
                     </header>
 
                     <p>
-                        The following figures are intended to help compare
-                        bacterial count distributions between food storage
-                        groups and across temperature categories.
+                        The following figures compare bacterial count distributions
+                        between food storage groups and across temperature categories.
                     </p>
 
                     <!-- Chart 1 -->
@@ -175,10 +170,9 @@
                         </span>
 
                         <p>
-                            This boxplot compares the distribution of bacterial
-                            counts in chilled and non-chilled samples. The
-                            extreme values in the dataset may compress the
-                            boxes and make differences among lower counts
+                            This boxplot compares bacterial counts in chilled
+                            and non-chilled samples. Extreme values may compress
+                            the boxes and make differences among lower counts
                             difficult to see.
                         </p>
                     </div>
@@ -196,15 +190,14 @@
                         </span>
 
                         <p>
-                            This figure compares observed bacterial counts
-                            across temperature categories. Differences should
-                            be interpreted cautiously because treatment group
-                            and temperature may be related in the dataset.
+                            This figure compares observed bacterial counts across
+                            temperature categories. Differences should be
+                            interpreted cautiously because temperature and
+                            treatment group may be related.
                         </p>
                     </div>
 
                     <h3>Statistical Methods</h3>
-
                     <ul>
                         <li>
                             <strong>Descriptive statistics:</strong>
@@ -218,8 +211,8 @@
                         </li>
                         <li>
                             <strong>Wilcoxon rank-sum test:</strong>
-                            comparison of observed bacterial count
-                            distributions between chilled and non-chilled samples.
+                            comparison of bacterial count distributions
+                            between chilled and non-chilled samples.
                         </li>
                         <li>
                             <strong>Kruskal-Wallis and post-hoc tests:</strong>
@@ -241,17 +234,17 @@
                             <tbody>
                                 <tr>
                                     <td>Shapiro-Wilk: chilled</td>
-                                    <td>1.47 × 10<sup>-13</sup></td>
+                                    <td>1.47 &times; 10<sup>-13</sup></td>
                                     <td>Evidence against normality</td>
                                 </tr>
                                 <tr>
                                     <td>Shapiro-Wilk: non-chilled</td>
-                                    <td>2.20 × 10<sup>-16</sup></td>
+                                    <td>2.20 &times; 10<sup>-16</sup></td>
                                     <td>Evidence against normality</td>
                                 </tr>
                                 <tr>
                                     <td>Wilcoxon rank-sum</td>
-                                    <td>3.00 × 10<sup>-6</sup></td>
+                                    <td>3.00 &times; 10<sup>-6</sup></td>
                                     <td>Reported difference between treatment groups</td>
                                 </tr>
                                 <tr>
@@ -264,24 +257,21 @@
                     </div>
 
                     <p>
-                        The supplied report indicates that bacterial counts
-                        were generally higher in the non-chilled group and
-                        that differences among temperature categories were
-                        observed in the reported analysis.
+                        The supplied report indicates that bacterial counts were
+                        generally higher in the non-chilled group and that
+                        differences among temperature categories were observed.
                     </p>
 
                     <h3>Limitations and Interpretation</h3>
-
                     <ul>
                         <li>
-                            The sample may not represent the wider food
-                            population, and sample sizes across temperature
-                            categories were uneven.
+                            The sample may not represent the wider food population,
+                            and sample sizes across temperature categories were uneven.
                         </li>
                         <li>
                             The supplied report notes that a temperature value
-                            was imputed for some chilled vegetables. This
-                            should be checked against the final dataset.
+                            was imputed for some chilled vegetables. This should
+                            be checked against the final dataset.
                         </li>
                         <li>
                             Temperature and treatment group may be related;
@@ -289,28 +279,39 @@
                             temperature effect.
                         </li>
                         <li>
-                            The reported statistics should be regenerated
-                            from the analysis script and verified before
-                            being treated as final results.
+                            Reported statistics should be regenerated from the
+                            analysis script and verified before being treated
+                            as final results.
                         </li>
                     </ul>
 
                     <p>
-                        <strong>Interpretation note:</strong> These results
-                        describe the supplied sample and should not be
-                        interpreted as proof of causation or as representative
-                        of all food products.
+                        <strong>Interpretation note:</strong>
+                        These results describe the supplied sample and should
+                        not be interpreted as proof of causation or as
+                        representative of all food products.
                     </p>
 
+                    <!-- Project links -->
                     <ul class="actions">
                         <li>
                             <a
-                                href="https://github.com/johnjasonalfonso/bacteria-food-safety-analysis"
+                                href="https://github.com/johnjasonalfonso/Data-Analysis-Portfolio/blob/main/R/Food-Bacteria-Analysis/analysis.R"
                                 class="button primary"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                View Code &amp; Results on GitHub
+                                View R Source Code
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/johnjasonalfonso/Data-Analysis-Portfolio/tree/main/R/Food-Bacteria-Analysis"
+                                class="button"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View All Code &amp; Results
                             </a>
                         </li>
                     </ul>
@@ -335,13 +336,12 @@
                     <p>
                         This research collaboration examined relationships
                         between dengue incidence and climate variables.
-                        The broader work investigated how temperature,
-                        rainfall, relative humidity, and heat index may
-                        relate to dengue patterns over time.
+                        The work investigated how temperature, rainfall,
+                        relative humidity, and heat index may relate to
+                        dengue patterns over time.
                     </p>
 
                     <h3>Research Scope</h3>
-
                     <ul>
                         <li>Exploratory analysis of dengue incidence and climate variables.</li>
                         <li>Correlation analysis to investigate associations.</li>
@@ -353,10 +353,10 @@
 
                     <p>
                         The work involved a collaboration with the University
-                        of the Philippines Manila National Institutes of
-                        Health. Additional charts, methods, and findings
-                        will be added as the corresponding analysis files
-                        and outputs are prepared for publication.
+                        of the Philippines Manila National Institutes of Health.
+                        Additional charts, methods, and findings will be added
+                        as the corresponding analysis files and outputs are
+                        prepared for publication.
                     </p>
 
                     <p>
@@ -406,4 +406,4 @@
     <script src="assets/js/main.js"></script>
 
 </body>
-</html>
+</html

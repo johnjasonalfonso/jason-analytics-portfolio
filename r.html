@@ -1,314 +1,409 @@
 
 <!DOCTYPE HTML>
-<!--
-    Forty by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 <head>
     <title>R &amp; Statistical Research | Jason Alfonso</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="R statistical analysis and research portfolio by Jason Alfonso, featuring food microbiology analysis, hypothesis testing, data visualization, and dengue-climate research." />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 </head>
 
 <body class="is-preload">
 
-<div id="wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-    <!-- Header -->
-    <header id="header" class="alt style2">
-        <a href="index.html" class="logo">
-            <strong>Jason Alfonso</strong>
-            <span>Analytics Portfolio</span>
-        </a>
-        <nav>
-            <a href="#menu">Menu</a>
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">
+                <strong>Jason Alfonso</strong>
+                <span>Analytics Portfolio</span>
+            </a>
+
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Navigation Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="sql.html">SAS &amp; SQL Automation</a></li>
+                <li><a href="credit-risk.html">Banking &amp; Lending Analytics</a></li>
+                <li><a href="forecasting.html">Forecasting &amp; Statistical Modeling</a></li>
+                <li><a href="r.html">R &amp; Statistical Research</a></li>
+                <li><a href="powerbi.html">Power BI &amp; Business Intelligence</a></li>
+                <li><a href="business-insights.html">Business Insights</a></li>
+            </ul>
         </nav>
-    </header>
 
-    <!-- Navigation -->
-    <nav id="menu">
-        <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="sql.html">SAS &amp; SQL Automation</a></li>
-            <li><a href="credit-risk.html">Banking &amp; Lending Analytics</a></li>
-            <li><a href="forecasting.html">Forecasting &amp; Statistical Modeling</a></li>
-            <li><a href="r.html">R &amp; Statistical Research</a></li>
-            <li><a href="powerbi.html">Power BI &amp; Business Intelligence</a></li>
-            <li><a href="business-insights.html">Business Insights</a></li>
-        </ul>
-    </nav>
+        <!-- Main Content -->
+        <div id="main">
 
-    <!-- Banner -->
-    <section id="banner" class="style2">
-        <div class="inner">
-            <span class="image">
-                <img src="images/pic07.jpg" alt="R and statistical research" />
-            </span>
-            <header class="major">
-                <h1>R &amp; Statistical Research</h1>
-            </header>
-            <div class="content">
-                <p>
-                    Selected statistical analysis and research projects using R,
-                    including exploratory data analysis, hypothesis testing,
-                    data visualization, and applied research. Each case study
-                    explains the research question, analytical approach,
-                    results, and limitations.
-                </p>
-            </div>
+            <!-- Page Banner -->
+            <section id="one">
+                <div class="inner">
+                    <header class="major">
+                        <h1>R &amp; Statistical Research</h1>
+                    </header>
+
+                    <p>
+                        Selected statistical analysis and research projects using R,
+                        including exploratory data analysis, hypothesis testing,
+                        data visualization, and applied research. Each case study
+                        describes the research question, analytical approach,
+                        reported results, and limitations.
+                    </p>
+
+                    <p>
+                        These projects demonstrate the application of statistical
+                        methods to real-world questions in food microbiology,
+                        public health, and climate-related research.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Project 1: Food Bacteria Analysis -->
+            <section id="bacteria">
+                <div class="inner">
+
+                    <header class="major">
+                        <h2>Food Bacteria Statistical Analysis</h2>
+                    </header>
+
+                    <p>
+                        <strong>Tools:</strong> R, dplyr, ggplot2, descriptive
+                        statistics, non-parametric hypothesis testing.
+                    </p>
+
+                    <p>
+                        This analysis examines bacterial counts, measured as
+                        colony-forming units per gram (CFU/g), in chilled and
+                        non-chilled food samples. The objective was to describe
+                        the observed distributions and investigate whether
+                        bacterial counts differed between treatment groups
+                        and across observed temperature categories.
+                    </p>
+
+                    <h3>Research Questions</h3>
+                    <ul>
+                        <li>How do observed bacterial counts differ between chilled and non-chilled samples?</li>
+                        <li>Are the bacterial count distributions consistent with normality?</li>
+                        <li>Do observed counts differ across temperature categories?</li>
+                    </ul>
+
+                    <h3>Sample Overview</h3>
+
+                    <p>
+                        The supplied analysis included 96 food samples:
+                        35 chilled samples and 61 non-chilled samples.
+                    </p>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Measure</th>
+                                    <th>Chilled</th>
+                                    <th>Non-chilled</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Number of samples</td>
+                                    <td>35</td>
+                                    <td>61</td>
+                                </tr>
+                                <tr>
+                                    <td>Mean CFU/g</td>
+                                    <td>966</td>
+                                    <td>173,137</td>
+                                </tr>
+                                <tr>
+                                    <td>Median CFU/g</td>
+                                    <td>5</td>
+                                    <td>98</td>
+                                </tr>
+                                <tr>
+                                    <td>Minimum CFU/g</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Maximum CFU/g</td>
+                                    <td>19,000</td>
+                                    <td>8,000,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>
+                        In the supplied report, non-chilled samples had a higher
+                        mean and median bacterial count and a wider observed
+                        range. Both distributions were strongly right-skewed,
+                        with a small number of high counts affecting the results.
+                    </p>
+
+                    <!-- Visual Results -->
+                    <header class="major">
+                        <h3>Visual Results</h3>
+                    </header>
+
+                    <p>
+                        The following figures are intended to help compare
+                        bacterial count distributions between food storage
+                        groups and across temperature categories.
+                    </p>
+
+                    <!-- Chart 1 -->
+                    <div class="box">
+                        <h4>Figure 1. Chilled vs. Non-chilled Samples</h4>
+
+                        <span class="image fit">
+                            <img
+                                src="images/boxplot_by_group.png"
+                                alt="Boxplot comparing bacterial counts in chilled and non-chilled food samples"
+                                loading="lazy"
+                            />
+                        </span>
+
+                        <p>
+                            This boxplot compares the distribution of bacterial
+                            counts in chilled and non-chilled samples. The
+                            extreme values in the dataset may compress the
+                            boxes and make differences among lower counts
+                            difficult to see.
+                        </p>
+                    </div>
+
+                    <!-- Chart 2 -->
+                    <div class="box">
+                        <h4>Figure 2. Bacterial Counts by Temperature Category</h4>
+
+                        <span class="image fit">
+                            <img
+                                src="images/boxplot_by_temperature_overall.png"
+                                alt="Boxplot comparing bacterial counts across observed temperature categories"
+                                loading="lazy"
+                            />
+                        </span>
+
+                        <p>
+                            This figure compares observed bacterial counts
+                            across temperature categories. Differences should
+                            be interpreted cautiously because treatment group
+                            and temperature may be related in the dataset.
+                        </p>
+                    </div>
+
+                    <h3>Statistical Methods</h3>
+
+                    <ul>
+                        <li>
+                            <strong>Descriptive statistics:</strong>
+                            sample size, mean, standard deviation, median,
+                            interquartile range, minimum, maximum, skewness,
+                            and kurtosis.
+                        </li>
+                        <li>
+                            <strong>Shapiro-Wilk test:</strong>
+                            assessment of normality within treatment groups.
+                        </li>
+                        <li>
+                            <strong>Wilcoxon rank-sum test:</strong>
+                            comparison of observed bacterial count
+                            distributions between chilled and non-chilled samples.
+                        </li>
+                        <li>
+                            <strong>Kruskal-Wallis and post-hoc tests:</strong>
+                            assessment of differences among temperature categories.
+                        </li>
+                    </ul>
+
+                    <h3>Reported Results</h3>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Analysis</th>
+                                    <th>Reported p-value</th>
+                                    <th>Interpretation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Shapiro-Wilk: chilled</td>
+                                    <td>1.47 × 10<sup>-13</sup></td>
+                                    <td>Evidence against normality</td>
+                                </tr>
+                                <tr>
+                                    <td>Shapiro-Wilk: non-chilled</td>
+                                    <td>2.20 × 10<sup>-16</sup></td>
+                                    <td>Evidence against normality</td>
+                                </tr>
+                                <tr>
+                                    <td>Wilcoxon rank-sum</td>
+                                    <td>3.00 × 10<sup>-6</sup></td>
+                                    <td>Reported difference between treatment groups</td>
+                                </tr>
+                                <tr>
+                                    <td>Kruskal-Wallis: temperature groups</td>
+                                    <td>0.0031</td>
+                                    <td>Reported difference among temperature categories</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>
+                        The supplied report indicates that bacterial counts
+                        were generally higher in the non-chilled group and
+                        that differences among temperature categories were
+                        observed in the reported analysis.
+                    </p>
+
+                    <h3>Limitations and Interpretation</h3>
+
+                    <ul>
+                        <li>
+                            The sample may not represent the wider food
+                            population, and sample sizes across temperature
+                            categories were uneven.
+                        </li>
+                        <li>
+                            The supplied report notes that a temperature value
+                            was imputed for some chilled vegetables. This
+                            should be checked against the final dataset.
+                        </li>
+                        <li>
+                            Temperature and treatment group may be related;
+                            observed differences do not establish a causal
+                            temperature effect.
+                        </li>
+                        <li>
+                            The reported statistics should be regenerated
+                            from the analysis script and verified before
+                            being treated as final results.
+                        </li>
+                    </ul>
+
+                    <p>
+                        <strong>Interpretation note:</strong> These results
+                        describe the supplied sample and should not be
+                        interpreted as proof of causation or as representative
+                        of all food products.
+                    </p>
+
+                    <ul class="actions">
+                        <li>
+                            <a
+                                href="https://github.com/johnjasonalfonso/bacteria-food-safety-analysis"
+                                class="button primary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View Code &amp; Results on GitHub
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <!-- Project 2: Dengue and Climate Research -->
+            <section id="dengue">
+                <div class="inner">
+
+                    <header class="major">
+                        <h2>Dengue and Climate Statistical Research</h2>
+                    </header>
+
+                    <p>
+                        <strong>Focus:</strong> Applied statistics,
+                        exploratory data analysis, trend assessment,
+                        and spatio-temporal analysis.
+                    </p>
+
+                    <p>
+                        This research collaboration examined relationships
+                        between dengue incidence and climate variables.
+                        The broader work investigated how temperature,
+                        rainfall, relative humidity, and heat index may
+                        relate to dengue patterns over time.
+                    </p>
+
+                    <h3>Research Scope</h3>
+
+                    <ul>
+                        <li>Exploratory analysis of dengue incidence and climate variables.</li>
+                        <li>Correlation analysis to investigate associations.</li>
+                        <li>Trend assessment and time-series visualization.</li>
+                        <li>Statistical and spatio-temporal analysis of observed patterns.</li>
+                    </ul>
+
+                    <h3>Research Context</h3>
+
+                    <p>
+                        The work involved a collaboration with the University
+                        of the Philippines Manila National Institutes of
+                        Health. Additional charts, methods, and findings
+                        will be added as the corresponding analysis files
+                        and outputs are prepared for publication.
+                    </p>
+
+                    <p>
+                        No numerical findings are presented here until the
+                        corresponding analysis outputs are ready to be shared.
+                    </p>
+
+                </div>
+            </section>
+
         </div>
-    </section>
 
-    <!-- Main -->
-    <div id="main">
-
-        <!-- Project 1: Bacteria Analysis -->
-        <section id="bacteria-project">
+        <!-- Footer -->
+        <footer id="footer">
             <div class="inner">
 
-                <header class="major">
-                    <h2>Food Bacteria Statistical Analysis</h2>
-                </header>
-
-                <p>
-                    <strong>Tools:</strong> R, dplyr, ggplot2, descriptive
-                    statistics, and non-parametric hypothesis testing.
-                </p>
-
-                <p>
-                    This analysis examines bacterial counts, measured as
-                    colony-forming units per gram (CFU/g), in chilled and
-                    non-chilled food samples. The objective was to describe
-                    the observed distributions and investigate whether
-                    bacterial counts differed by treatment and observed
-                    temperature category.
-                </p>
-
-                <h3>Research Questions</h3>
-                <ul>
-                    <li>How do observed bacterial counts differ between chilled and non-chilled samples?</li>
-                    <li>Are CFU/g distributions consistent with normality?</li>
-                    <li>Do observed counts differ across temperature categories?</li>
-                </ul>
-
-                <h3>Sample Overview</h3>
-                <p>The supplied analysis included 96 food samples.</p>
-
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Measure</th>
-                                <th>Chilled</th>
-                                <th>Non-Chilled</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Number of samples</td>
-                                <td>35</td>
-                                <td>61</td>
-                            </tr>
-                            <tr>
-                                <td>Mean CFU/g</td>
-                                <td>966</td>
-                                <td>173,137</td>
-                            </tr>
-                            <tr>
-                                <td>Median CFU/g</td>
-                                <td>5</td>
-                                <td>98</td>
-                            </tr>
-                            <tr>
-                                <td>Maximum CFU/g</td>
-                                <td>19,000</td>
-                                <td>8,000,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <p>
-                    In the supplied results, non-chilled samples had a higher
-                    mean and median CFU/g and a wider observed range. Both
-                    distributions were strongly right-skewed, indicating
-                    that a small number of high values affected the
-                    distributions.
-                </p>
-
-                <h3>Statistical Methods</h3>
-                <ul>
+                <ul class="icons">
                     <li>
-                        <strong>Descriptive statistics:</strong>
-                        sample size, mean, standard deviation, median,
-                        interquartile range, minimum, maximum, skewness,
-                        and kurtosis.
-                    </li>
-                    <li>
-                        <strong>Shapiro-Wilk tests:</strong>
-                        assessed the normality of CFU/g values within
-                        treatment groups.
-                    </li>
-                    <li>
-                        <strong>Wilcoxon rank-sum test:</strong>
-                        compared observed CFU/g distributions between
-                        chilled and non-chilled samples.
-                    </li>
-                    <li>
-                        <strong>Kruskal-Wallis and post-hoc tests:</strong>
-                        examined differences among temperature categories.
-                    </li>
-                </ul>
-
-                <h3>Reported Results</h3>
-
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Analysis</th>
-                                <th>Reported p-value</th>
-                                <th>Interpretation</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Shapiro-Wilk: chilled</td>
-                                <td>1.47 × 10<sup>-13</sup></td>
-                                <td>Evidence against normality</td>
-                            </tr>
-                            <tr>
-                                <td>Shapiro-Wilk: non-chilled</td>
-                                <td>2.20 × 10<sup>-16</sup></td>
-                                <td>Evidence against normality</td>
-                            </tr>
-                            <tr>
-                                <td>Wilcoxon rank-sum</td>
-                                <td>3.00 × 10<sup>-6</sup></td>
-                                <td>Reported difference between treatment groups</td>
-                            </tr>
-                            <tr>
-                                <td>Kruskal-Wallis: temperature groups</td>
-                                <td>0.0031</td>
-                                <td>Reported difference among temperature categories</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <p>
-                    The supplied report indicates that observed CFU/g values
-                    were generally higher in the non-chilled group and that
-                    temperature categories differed in the reported
-                    combined analysis. These findings describe the observed
-                    sample and do not establish causation or representativeness
-                    of the wider food supply.
-                </p>
-
-                <h3>Limitations and Interpretation</h3>
-                <ul>
-                    <li>
-                        The sample may not represent the wider food population,
-                        and sample sizes across temperature categories were uneven.
-                    </li>
-                    <li>
-                        The supplied report notes an imputed temperature value
-                        for some chilled vegetables. This decision should be
-                        checked against the final analysis dataset.
-                    </li>
-                    <li>
-                        Temperature and treatment group are not independent
-                        concepts in this dataset, so observed differences
-                        should not be interpreted as a causal temperature effect.
-                    </li>
-                    <li>
-                        The reported statistics should be regenerated from the
-                        analysis script and checked before being treated as final.
-                    </li>
-                </ul>
-
-                <ul class="actions">
-                    <li>
-                        <a href="https://github.com/johnjasonalfonso/bacteria-food-safety-analysis"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="button primary">
-                            View Code &amp; Results on GitHub
+                        <a
+                            href="https://github.com/johnjasonalfonso"
+                            class="icon brands alt fa-github"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="label">GitHub</span>
                         </a>
                     </li>
                 </ul>
 
-            </div>
-        </section>
-
-        <!-- Project 2: Dengue and Climate Research -->
-        <section id="dengue-climate">
-            <div class="inner">
-
-                <header class="major">
-                    <h2>Dengue and Climate Statistical Research</h2>
-                </header>
-
-                <p>
-                    This research collaboration examined relationships between
-                    dengue incidence and climate variables using statistical
-                    and spatio-temporal analysis.
-                </p>
-
-                <p>
-                    The analytical work included exploratory data analysis,
-                    correlation analysis, trend assessment, and visualization
-                    of climate and dengue patterns. The broader research
-                    investigated how temperature, rainfall, humidity, and
-                    heat index may relate to dengue incidence over time.
-                </p>
-
-                <p>
-                    Additional charts, methods, and findings will be added
-                    as the corresponding analysis files and outputs are
-                    prepared for publication.
-                </p>
+                <ul class="copyright">
+                    <li>&copy; Jason Alfonso</li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
 
             </div>
-        </section>
+        </footer>
 
     </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="inner">
-            <ul class="icons">
-                <li>
-                    <a href="https://github.com/johnjasonalfonso"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="icon brands alt fa-github">
-                        <span class="label">GitHub</span>
-                    </a>
-                </li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Jason Alfonso</li>
-                <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </div>
-    </footer>
-
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
